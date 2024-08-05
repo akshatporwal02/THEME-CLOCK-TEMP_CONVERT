@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="theme.css" />
+    <!-- font awesome tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav-bar" id="nav">
+      <div class="nav-logo">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <h1>MY THEME</h1>
+      </div>
+      <div class="nav-links">
+        <ul id="link">
+          <i class="fa-solid fa-x" onclick="menuclose()" id="icc"></i>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>FEATURES</li>
+          <li>SERVICES</li>
+        </ul>
+      </div>
+      <div class="btn">
+        <i
+          class="fa-regular fa-moon"
+          onclick="themechange()"
+          title="change theme"
+          id="imp"
+        ></i>
+      </div>
+    </nav>
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia esse
+          repellendus quasi, quod soluta molestias labore, velit sed tempore
+          dignissimos dolores dolorem voluptas, inventore deleniti.
+        </p>
+        <a href="" id="exp">EXPLORE NOW</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/561/459/593/death-digital-art-smoke-dark-wallpaper-preview.jpg"
+          alt="hero-image"
+        />
+      </div>
+    </section>
+    <div class="main">
+      <i class="fa-solid fa-bars" onclick="menuopen()"></i>
+    </div>
+    <section class="myclk" id="myclk">
+      <h1 class="digi" id="ABOUT">DIGITAL CLOCK</h1>
+      <div class="clock">
+        <h1 id="time"></h1>
+        <h1 id="time1"></h1>
+        <h1 id="time2"></h1>
+      </div>
+      <div class="text" id="text">
+        <h1>HOURS</h1>
+        <h1>MINUTES</h1>
+        <h1>SECONDS</h1>
+      </div>
+      
+    </section>
+    <section>
+        <div class="temprature" id="temprature">
+            <div class="head">
+                <h1 id="temp">TEMPRATURE CONVERTER</h1>
+            </div>
+            <br><br>
+            <div class="box">
+                <label for="">TEMPRATURE</label>
+                <input type="number" name="" id="input">
+                <label for="">FROM:</label>
+                <select name="" id="from">
+                    <option value="">select</option>
+                    <option value="celcius">celcius</option>
+                    <option value="farhenite">farhenite</option>
+                    <option value="kelvin">kelvin</option>
+                </select>
+                <br>
+                <label for="">TO:</label>
+                <select name="" id="to">
+                    <option value="">select</option>
+                    <option value="celcius">celcius</option>
+                    <option value="farhenite">farhenite</option>
+                    <option value="kelvin">kelvin</option>
+                </select>
+                <button onclick="temp()">convert</button>
+                <div class="result" id="result"></div>
+            </div>
+
+        </div>
+        <!-- <div class="popup">
+          <button onclick="login()">LOGIN PAGE</button>
+        </div>
+        <div class="popup">
+          <button onclick="login()">LOGIN PAGE</button>
+        </div> -->
+        <!-- <button onclick="login()">page</button> -->
+    </section>
+    <div class="btns">
+      <div class="popup">
+        <button onclick="login()">LOGIN PAGE</button>
+      </div>
+      <div class="popup">
+        <button onclick="nologin()">ABOUT US</button>
+      </div>
+      <!-- <div class="image">
+        <img src="https://c4.wallpaperflare.com/wallpaper/561/459/593/death-digital-art-smoke-dark-wallpaper-preview.jpg" alt="">
+      </div> -->
+    </div>
+    <div class="image" id="login-img">
+      <img src="https://c4.wallpaperflare.com/wallpaper/561/459/593/death-digital-art-smoke-dark-wallpaper-preview.jpg" alt="" id="imgg">
+    </div>
+    <!-- <div class="popup">
+      <button onclick="login()">LOGIN PAGE</button>
+    </div>
+    <div class="popup">
+      <button onclick="nologin()">ABOUT US</button>
+    </div> -->
+    <div class="formpara">
+      <p id="removepage" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur doloribus adipisci est, ratione corrupti quibusdam illum nemo harum saepe corporis expedita ex minima eius delectus? Sapiente repudiandae enim voluptatum quo, asperiores incidunt quas ducimus officiis veniam sit minus, facere saepe velit laboriosam alias libero consequuntur quod. Nisi autem sed nam praesentium nemo harum saepe corporis expedita ex minima eius delectus? Sapiente repudiandae enim voluptatum quo, asperiores incidunt quas ducimus officiis veniam sit minus, facere saepe velit laboriosam alias libero consequuntur quod. Nisi autem sed nam praesentium  velit laboriosam alias libero consequuntur quod. Nisi autem sed nam praesentium nemo harum saepe corporis expedita ex minima eius delectus? Sapiente repudiandae enim voluptatum quo, asperiores incidunt quas ducimus officiis veniam sit minus, facere saepe velit laboriosam alias libero consequuntur quod. Nisi autem sed nam praesentium <br><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus nobis, quis voluptatibus quas eum error aspernatur pariatur praesentium veniam ducimus, dignissimos quia, sequi qui dolores cupiditate? Quam nesciunt fugiat debitis, voluptas, accusantium vitae alias quasi provident dolorum minus architecto?</p>..</p><br>
+    </div>
+
+    <form action="" id="form"> 
+      
+      <!-- <i class="fa-solid fa-x" id="removepage" onclick="nologin()"></i><br> -->
+        <label for="">FIRST_NAME</label><br><br>
+        <input type="text" name="" id=""><br><br>
+        <label for="">LAST_NAME</label><br><br>
+        <input type="text" name="" id=""><br><br>
+        <label for="">EMAIL</label><br><br>
+        <input type="email" name="" id=""><br><br>
+        <label for="">CONTACT N0.</label><br><br>
+        <input type="number" name="" id=""><br><br>
+        <div class="submit"> <button>SUBMIT</button></div>
+        <!-- <button>SUBMIT</button> -->
+
+    </form>
+    <section class="project">
+      <H1 id="proj">MY PROJECTS</H1>
+      <div class="pro">
+        <div class="product-card">
+          <div class="text1">
+            <img src="./images/logo.png" alt="FAMMS">
+          </div>
+          <div class="hover-card">
+            <a href="">VIEW PROJECT</a>
+            <a href="">GET CODE</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="text2">
+            <img src="./images/myLogo.png" alt="HOMEMAKER">
+          </div>
+          <div class="hover-card">
+            <a href="https://akshatporwal02.github.io/THE-HOMEMAKER/" target="_blank">VIEW PROJECT</a>
+            <a href="">GET CODE</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="text3">
+            <img src="./images/BMW.png" alt="">
+            <h1>CAR RENTAL</h1>
+          </div>
+          <div class="hover-card">
+            <a href="">VIEW PROJECT</a>
+            <a href="">GET CODE</a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <footer class="foot">
+      <div class="logo">
+        <h1>MY Project</h1>
+      </div>
+      <div class="connect">
+        <h1>Connect With Me</h1>
+        <a href="" class="linked"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" class="git"><i class="fa-brands fa-github"></i></a>
+        <a href="" class="yt"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="lastbtn"><a href="">SUBSCRIBE</a></div>
+     
+    </footer>
+    <footer class="foot2">
+      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, magni!</h1>
+      <h1>DESIGNED AND DEVELOPED BY <span>AKSHAT PORWAL</span></h1>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
